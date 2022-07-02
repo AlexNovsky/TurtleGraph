@@ -15,6 +15,7 @@ def random_color():
 tim.pensize(3)
 tim.speed("fastest")
 directions = [0, 90, 180, 270]
+screen = t.Screen()
 
 
 def draw_spirograph(size_of_gap):
@@ -23,7 +24,6 @@ def draw_spirograph(size_of_gap):
         tim.circle(150)
         tim.setheading(tim.heading() + size_of_gap)
 
-draw_spirograph(5)
 
-screen = t.screen()
+draw_spirograph(5)
 screen.exitonclick()
